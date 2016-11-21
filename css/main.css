@@ -1,0 +1,421 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline-block;
+}
+/*头部样式*/
+header {
+  width: 100%;
+}
+header .h-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 113px;
+  padding-top: 30px;
+  background: url("../images/bg.png") repeat-x;
+  z-index: 100;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+header .h-nav .nav-wrap {
+  width: 1001px;
+  height: 61px;
+  margin: 0 auto;
+}
+header .h-nav::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/*logo和酒店名*/
+.logo-name {
+  float: left;
+  width: 208px;
+}
+.logo-name .logo {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  width: 48px;
+  height: 49px;
+  background: url("../images/logo.png");
+}
+.logo-name .name {
+  margin-top: -4px;
+}
+.logo-name .name h2 {
+  font: 28px "微软雅黑";
+}
+.logo-name .name span {
+  margin-left: 15px;
+  font: 12px "微软雅黑";
+}
+/*服务热线和网页导航*/
+.nav {
+  position: relative;
+  float: right;
+  font: 14px "微软雅黑";
+  /*设置导航条*/
+}
+.nav .service-tel {
+  position: absolute;
+  right: 0;
+}
+.nav .service-tel .tel-number {
+  color: #b40000;
+}
+.nav ul {
+  margin-right: -10px;
+}
+.nav ul li {
+  width: 82px;
+  height: 30px;
+  margin-top: 30px;
+  margin-left: 1px;
+  text-align: center;
+  line-height: 30px;
+}
+.nav ul li:hover {
+  background: #b40000;
+  color: #fff;
+  cursor: pointer;
+}
+/*酒店大图*/
+.banner {
+  width: 100%;
+  height: 450px;
+  margin-top: 113px;
+  background: url("../images/banner.jpg") no-repeat;
+}
+/*酒店简介*/
+.summary {
+  width: 100%;
+  height: 543px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background: url("../images/bg.png");
+}
+.summary .s-wrap {
+  width: 1001px;
+  margin: 0 auto;
+}
+/*文字内容和照片图部分*/
+.s-wrap .s-content {
+  float: left;
+  margin-right: 90px;
+}
+.s-wrap .s-content p {
+  width: 430px;
+  margin-bottom: 5px;
+  font: 14px "微软雅黑";
+  line-height: 30.67px;
+  text-indent: 2em;
+  letter-spacing: 1.8px;
+}
+.s-wrap .s-content .desc-word {
+  width: 430px;
+}
+.s-wrap .s-pic {
+  float: right;
+  margin-top: 45px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 8px #d6d2b5;
+  background: #fff;
+}
+.s-wrap .s-pic .pic {
+  width: 430px;
+  min-width: 430px;
+  height: 450px;
+  background: url("../images/pic.jpg");
+  overflow: hidden;
+}
+.s-wrap::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/*section1、2中的标题样式*/
+.summary .title,
+.service .title {
+  width: 167px;
+  height: 38px;
+  margin-bottom: 10px;
+  font: 16px "微软雅黑";
+  text-align: center;
+  line-height: 36px;
+  color: #fff;
+  background: url("../images/bg_title.png") no-repeat;
+}
+/*三个圆形部分*/
+.desc-word ul {
+  width: 100%;
+}
+.desc-word ul li {
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50%;
+  text-align: center;
+}
+.desc-word ul .first {
+  width: 103px;
+  height: 103px;
+  margin-left: 10px;
+  line-height: 103px;
+  color: #fff;
+  background: #0495d6;
+}
+.desc-word ul .second {
+  width: 115px;
+  height: 115px;
+  margin-left: 35px;
+  line-height: 115px;
+  background: #f3e443;
+}
+.desc-word ul .third {
+  width: 130px;
+  height: 130px;
+  margin-left: 37px;
+  line-height: 130px;
+  color: #fff;
+  background: #ef0708;
+}
+/*优惠信息*/
+.pref {
+  width: 100%;
+  background: #e1dfc3;
+}
+.pref .p-wrap {
+  width: 1001px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+.pref .p-wrap .room {
+  width: 100%;
+}
+.pref .p-wrap .title {
+  width: 167px;
+  height: 38px;
+  margin-bottom: 10px;
+  font: 16px "微软雅黑";
+  text-align: center;
+  line-height: 36px;
+  color: #fff;
+  background: url("../images/bg_title_02.png") no-repeat;
+}
+/*房间类型、价格*/
+.room {
+  margin-top: 15px;
+}
+.room li {
+  position: relative;
+  width: 300px;
+  height: 190px;
+}
+.room li:first-child {
+  margin-right: 41px;
+  color: #fff;
+  background: url("../images/p_bg_01.png") no-repeat;
+}
+.room .second {
+  margin-right: 41px;
+  color: #fff;
+  background: url("../images/p_bg_02.png") no-repeat;
+}
+.room .third {
+  color: #fff;
+  background: url("../images/p_bg_03.jpg") no-repeat;
+}
+.room li .room-type {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  font: 16px "Microsoft Yahei";
+  line-height: 40px;
+  padding-left: 45px;
+  background: rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.room li .room-price {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 80px;
+  height: 40px;
+  font-family: "Microsoft Yahei";
+  line-height: 40px;
+  background: #0495d6;
+}
+.room li .room-price .number {
+  margin-left: 5px;
+  font-size: 20px;
+}
+.room li .room-price .begin {
+  font-size: 12px;
+}
+/*特色服务部分*/
+.service {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background: url("../images/bg.png");
+}
+.service .s-wrap {
+  width: 1001px;
+  margin: 0 auto;
+}
+.service .s-wrap .s-show {
+  margin-top: 40px;
+}
+.service .s-wrap .s-show li {
+  width: 194px;
+  height: 234px;
+  border-radius: 50%;
+  margin-left: 40px;
+}
+.service .s-wrap .s-show li .bg {
+  width: 100%;
+  height: 194px;
+  border-radius: 50%;
+}
+.service .s-wrap .s-show li:nth-child(1) .bg {
+  background: url("../images/servise_bg01.png") no-repeat;
+}
+.service .s-wrap .s-show li:nth-child(2) .bg {
+  background: url("../images/servise_bg02.png") -3px 0 no-repeat;
+}
+.service .s-wrap .s-show li:nth-child(3) .bg {
+  background: url("../images/servise_bg03.png") -3px 0 no-repeat;
+}
+.service .s-wrap .s-show li:nth-child(4) .bg {
+  background: url("../images/servise_bg04.png") -1px 0 no-repeat;
+}
+.service .s-wrap .s-show .s-title {
+  margin-top: 15px;
+  width: 100%;
+  font: 14px "Microsoft Yahei";
+  text-align: center;
+}
+/*尾部部分*/
+.reverse {
+  width: 100%;
+  background: url("../images/reverse_bg.png") repeat;
+}
+.reverse .r-wrap {
+  width: 1001px;
+  height: 90px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.reverse .r-wrap .reverse-infor {
+  float: left;
+  font-family: "Microsoft Yahei";
+  color: #fff;
+}
+.reverse .r-wrap::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.reverse-infor .time {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.reverse-infor .reverse-tel {
+  font-size: 24px;
+}
+/*预定按钮部分*/
+.reverse-button {
+  float: right;
+  margin-right: 115px;
+  margin-top: 12px;
+  padding: 1px;
+  width: 138px;
+  height: 40px;
+  border: 1px solid #fff;
+}
+.reverse-button div {
+  width: 100%;
+  height: 100%;
+  font: 20px "Microsoft Yahei";
+  color: #b40000;
+  line-height: 40px;
+  text-align: center;
+  background: #fff;
+  cursor: pointer;
+}
+/*餐厅图片*/
+.rest {
+  width: 100%;
+  height: 345px;
+  background: url("../images/rest_bg.jpg") no-repeat;
+}
+/*最底部地址等信息部分*/
+.foot-epitome {
+  width: 100%;
+  background: #170000;
+}
+.foot-epitome .epi-wrap {
+  position: relative;
+  width: 1001px;
+  margin: 0 auto;
+  margin-top: -1px;
+  padding-top: 32px;
+  padding-bottom: 45px;
+  color: #fff;
+}
+.foot-epitome .epi-wrap .address {
+  font: 12px "宋体";
+  line-height: 24px;
+}
+.foot-epitome .epi-wrap .f-logo {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  background: #170000;
+}
+.foot-epitome .epi-wrap .copyright {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  font-size: 12px;
+  line-height: 24px;
+}
+.f-logo .logo {
+  display: block;
+  margin: 42px 47px 15px 47px;
+  width: 50px;
+  height: 50px;
+  background: url("../images/logo_white.png") no-repeat;
+}
+.f-logo span {
+  margin-left: 25px;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
